@@ -4,16 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        a:link, a:visited {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:hover, a:active {
+          color: pink;
+          background-color: transparent;
+         text-decoration: none;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        #t01{
+            background-color: aqua;
+        }
+        </style>
 </head>
 <body>
     <header>
-
     </header>
     <main>
-        <h1>InterShop</h1>
+        <h1>Заголовок 1-го розміру</h1>
+        <p>Параграф</p>
+        <h2>Заголовок 2-го розміру</h2>
+        <h3>Заголовок 3-го розміру</h3>
+        <div>
+            <a href="https://w3schoolsua.github.io/html/html_basic.html#gsc.tab=0">Посилання</a>
+        </div>
+        <button title="тег title потрібен для такої підказки">Натисни сюди!</button>
+        <ul style="list-style-type: none;">
+            <li>частина списку 1</li>
+            <li>частина списку 2</li>
+            <li>частина списку 3</li>
+        </ul>
+        <ol type="i" start="50">
+            <li>Кава</li>
+            <li>Чай</li>
+                <ul>
+                    <li>Чорний чай</li>
+                    <li>Зелений чай</li>
+                </ul>
+            <li>Молоко</li>
+            <li>Сік</li>
+        </ol>
+        <tagname style="color: red;">Тестуємо тег</tagname>
+        <p>Тестую<br>тег<br>br!</p>
+        <pre>
+            І ось ідем у бою життєвому.
+          
+            Міцні, тверді, незламні мов граніт,
+          
+            Бо плач не дав свободи ще нікому,
+          
+            А хто борець, той здобуває світ.
+        </pre>
+        <div>
+            <a href="https://w3schoolsua.github.io/html/html_links.html#gsc.tab=0" target="_blank">Посилання відкриває пов’язаний документ в новому вікні або вкладці</a>
+        </div>
+        <div>
+            <a href="https://w3schoolsua.github.io/html/html_links.html#gsc.tab=0" target="_self">Посилання відкриває пов’язаний документ в тому ж вікні / вкладці, в якому він був натиснутий (за замовчуванням)</a>
+        </div>
+        <div>
+            <a href="https://w3schoolsua.github.io/html/html_links.html#gsc.tab=0" target="_parent">Посилання відкриває пов’язаний документ в батьківському фреймі</a>
+        </div>   
+        <div>
+            <a href="https://w3schoolsua.github.io/html/html_links.html#gsc.tab=0" target="_top">Посилання відкриває пов’язаний документ в повному тілі вікна</a>
+        </div>
+        <a href="https://w3schoolsua.github.io/html/html_links.html#gsc.tab=0">
+            <img src="C:/sigma.png" alt="HTML уроки для початківців" style="width:200px;height:200px;border:0;" title="Це посилання переведе вас на сайт з уроками по html">
+        </a>
+        <h2 id="C4">Розділ 4</h2>
+        <div>
+            <a href="#C4">Перейти до розділу 4</a>
+        </div>
+        <div>
+            <a href="html_demo.html#C4">Перейти до розділу 4 (знаходячись на іншій сторінці)</a>
+        </div>
+        <img src="D:/daeth-funi.gif" alt="Burned smile" style="width:200px;height:200px;">
+        <table id="t01">
+            <caption>Підпис</caption>
+            <tr>
+              <th>Ім'я</th>
+              <th>Прізвище</th>
+              <th colspan="2">Вік</th>
+              <th rowspan="3">Test</th>
+            </tr>
+            <tr>
+              <td>Дмитро</td>
+              <td>Демидів</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Олександра</td>
+              <td>Корнієнко</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+        </table>
+        <dl>
+            <dt>Кава</dt>
+            <dd>- чорний гарячий напій</dd>
+            <dt>Молоко</dt>
+            <dd>- білий холодний напій</dd>
+        </dl>
+        <form>
+            <fieldset>
+                <legend>Форма реєстрації:</legend>
+                Ім’я:<br>
+                <input type='text' name='firstname'><br>
+                Прізвище:<br>
+                <input type='text' name='lastname'>
+            </fieldset>
+        </form>
+        <form action='/action_page.html' target='_blank'>
+            <input type='radio' name='gender" value='male' checked> Чоловіча<br>
+            <input type='radio' name='gender' value='female'> Жіноча<br>
+            <input type='submit' value='Зареєструватись'>
+        </form>
     </main>
     <footer>
-
     </footer>
 </body>
 </html>
